@@ -9,6 +9,9 @@ and create reference like below
 **
 And play the video **videoPlayer.playVideo()**.
 Here u can customise the player images and loader images how ever u wnat.
+
+**Note: Here u can able to play only one Video not list of videos in Up coming project i will post with multiple video how to do.
+**
 ![](Images/loading.png) ![](Images/Speed.png)
 ![](Images/potriatPlay.png)
 ![](Images/LandscapePlay.png)
