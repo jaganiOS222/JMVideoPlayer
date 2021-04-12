@@ -48,7 +48,7 @@ extension JMVideoPlayer {
     
     private func hideLoderView() {
         self.loaderView.isHidden = true
-        self.overLayView.isHidden = false
+        self.overLayView.isHidden = isHideControls ?? false
     }
     
     private func unhideLoderView() {

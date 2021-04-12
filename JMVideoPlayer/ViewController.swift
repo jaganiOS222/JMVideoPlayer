@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         videoPlayer.videoLink = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         videoPlayer.playVideo()
-        videoPlayer.backButton.isHidden = true
-
+        videoPlayer.isHideBackButton = true
+        videoPlayer.isHideControls = false
     }
 
 

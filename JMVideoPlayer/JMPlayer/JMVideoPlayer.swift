@@ -31,11 +31,26 @@ class JMVideoPlayer: UIView {
     @IBOutlet weak var volumeButton: UIButton!
     @IBOutlet weak var speedButton: UIButton!
     @IBOutlet weak var speedStackView: UIStackView!
-
+    
     //MARK:- Variables
     fileprivate let seekDuration: Float64 = 15.0
     var avPlayerController:AVPlayerViewController? = AVPlayerViewController()
     var avPlayer:AVPlayer? = AVPlayer()
+    var isHideControls:Bool? {
+        didSet {
+            if let hide = isHideControls {
+                overLayView.isHidden = hide
+            }
+        }
+    }
+    var isHideBackButton:Bool? {
+        didSet {
+            if let hide = isHideBackButton {
+                backButton.isHidden = hide
+            }
+        }
+    }
+    
     var videoLink:String? {
         didSet {
             if let link = videoLink {
