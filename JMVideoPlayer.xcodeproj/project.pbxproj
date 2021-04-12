@@ -18,6 +18,10 @@
 		1844D8B4262404E100E7587E /* JMVideoPlayer_Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844D8B0262404E100E7587E /* JMVideoPlayer_Observers.swift */; };
 		1844D8B5262404E100E7587E /* JMVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844D8B1262404E100E7587E /* JMVideoPlayer.swift */; };
 		1844D8B72624059900E7587E /* JMVideoPlayer_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844D8B62624059900E7587E /* JMVideoPlayer_Helper.swift */; };
+		1844D8BD262407D900E7587E /* potriatPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1844D8B9262407D800E7587E /* potriatPlay.png */; };
+		1844D8BE262407D900E7587E /* LandscapePlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1844D8BA262407D800E7587E /* LandscapePlay.png */; };
+		1844D8BF262407D900E7587E /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 1844D8BB262407D800E7587E /* loading.png */; };
+		1844D8C0262407D900E7587E /* Speed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1844D8BC262407D900E7587E /* Speed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		1844D8B0262404E100E7587E /* JMVideoPlayer_Observers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMVideoPlayer_Observers.swift; sourceTree = "<group>"; };
 		1844D8B1262404E100E7587E /* JMVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMVideoPlayer.swift; sourceTree = "<group>"; };
 		1844D8B62624059900E7587E /* JMVideoPlayer_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMVideoPlayer_Helper.swift; sourceTree = "<group>"; };
+		1844D8B9262407D800E7587E /* potriatPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = potriatPlay.png; sourceTree = "<group>"; };
+		1844D8BA262407D800E7587E /* LandscapePlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LandscapePlay.png; sourceTree = "<group>"; };
+		1844D8BB262407D800E7587E /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		1844D8BC262407D900E7587E /* Speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		1844D8B82624070800E7587E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1844D8BA262407D800E7587E /* LandscapePlay.png */,
+				1844D8BB262407D800E7587E /* loading.png */,
+				1844D8B9262407D800E7587E /* potriatPlay.png */,
+				1844D8BC262407D900E7587E /* Speed.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -157,9 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1844D8A4262404C200E7587E /* LaunchScreen.storyboard in Resources */,
+				1844D8BE262407D900E7587E /* LandscapePlay.png in Resources */,
 				1844D8B2262404E100E7587E /* JMVideoPlayer.xib in Resources */,
 				1844D8A1262404C200E7587E /* Assets.xcassets in Resources */,
 				1844D89F262404C100E7587E /* Main.storyboard in Resources */,
+				1844D8C0262407D900E7587E /* Speed.png in Resources */,
+				1844D8BD262407D900E7587E /* potriatPlay.png in Resources */,
+				1844D8BF262407D900E7587E /* loading.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
