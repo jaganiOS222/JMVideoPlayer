@@ -48,12 +48,22 @@ extension JMVideoPlayer {
     
     private func hideLoderView() {
         self.loaderView.isHidden = true
-        self.overLayView.isHidden = isHideControls ?? false
+        hideOverLayView()
+        
     }
     
     private func unhideLoderView() {
         self.loaderView.isHidden = false
-        self.overLayView.isHidden = true
+        hideOverLayView()
+    }
+    
+    public func hideOverLayView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+            if let isHidden = self?.isHideControls, !isHidden {
+                self?.overLayView.isHidden = true
+                self?.speedStackView.isHidden = true
+            }
+        }
     }
 }
 
@@ -99,8 +109,8 @@ extension JMVideoPlayer {
             let rate = Float(speed.replacingOccurrences(of: "x", with: ""))
             avPlayer?.rate = rate ?? 0.0
             self.playButton.isSelected = true
+            speedButton.setTitle(speed, for: .normal)
             playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
-
         }
         speedStackView.isHidden = true
 

@@ -19,11 +19,12 @@ extension JMVideoPlayer {
 
     
     @objc func didTapOverLayView(_ sender:UITapGestureRecognizer) {
-        overLayView.isHidden = true
+        hideOverLayView()
     }
     
     @objc func didTapVideoView(_ sender:UITapGestureRecognizer) {
-        overLayView.isHidden = isHideControls ?? false
+        self.overLayView.isHidden = false
+        hideOverLayView()
     }
 
 }

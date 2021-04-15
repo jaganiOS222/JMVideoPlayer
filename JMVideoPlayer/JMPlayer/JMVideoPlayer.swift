@@ -36,10 +36,9 @@ class JMVideoPlayer: UIView {
     fileprivate let seekDuration: Float64 = 15.0
     var avPlayerController:AVPlayerViewController? = AVPlayerViewController()
     var avPlayer:AVPlayer? = AVPlayer()
-    var isHideControls:Bool? {
+    var isHideControls:Bool? = false {
         didSet {
-            if let hide = isHideControls {
-                overLayView.isHidden = hide
+            if let _ = isHideControls {
             }
         }
     }
@@ -84,7 +83,7 @@ class JMVideoPlayer: UIView {
         if let playerView = avPlayerController?.view {
             videoView.addSubview(playerView)
         }
-        addingSpeedButtonsProgramatically(["0.25x","0.5x","1x","2x","5x"])
+        addingSpeedButtonsProgramatically(["0.25x","0.5x","1x","2x","2.5x"])
         addingTapGestures()
     }
     
